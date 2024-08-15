@@ -1,0 +1,8 @@
+numpy
+pandas
+os
+glob
+pillow (PIL)
+matplotlib
+tensorflow (pour Keras et le modèle VGG16)
+scipy
