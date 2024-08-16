@@ -4,7 +4,7 @@
 Ce projet vise à développer un **Système de Recommandation de Fleurs** qui utilise les caractéristiques des images. Il exploite les techniques de computer vision et de machine learning pour analyser les images de différentes fleurs, en tenant compte de la couleur, de la forme et du style, afin de recommander des fleurs similaires ou complémentaires aux utilisateurs.
 
 ## Données
-Nous avons constitué un ensemble de données diversifié comprenant une variété de fleurs aux couleurs, tailles et styles différents. Assurez-vous que toutes les images sont dans un format uniforme (par exemple, JPEG, PNG). Nous disposons d'un échantillon de **49** images de fleurs.
+Nous avons constitué un ensemble de données diversifié comprenant une variété de fleurs aux couleurs, tailles et styles différents. Assurez-vous que toutes les images sont dans un format uniforme (par exemple, JPEG, PNG). Nous disposons d'un échantillon de **49 images** de fleurs.
 
 ## Méthodologie
 Pour développer un système de recommandation basé sur les caractéristiques des images, nous avons suivi les étapes suivantes :
