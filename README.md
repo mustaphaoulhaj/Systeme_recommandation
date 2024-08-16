@@ -12,18 +12,6 @@ Pour développer un système de recommandation basé sur les caractéristiques d
 2. **Sélection du modèle pré-entraîné** : Un modèle de réseau de neurones convolutionnels  pré-entraîné, tel que **VGG16**, est sélectionné. Ce modèle, ayant été entraîné sur de vastes ensembles de données, est capable d'extraire des représentations visuelles puissantes.
 3. **Extraction des caractéristiques**: Chaque image du jeu de données est passée à travers le modèle CNN sélectionné pour en extraire les caractéristiques. On obtient un vecteur de caractéristiques descriptif pour chaque image.
 4. **Définition d'une métrique de similarité**: Une métrique de similarité est définie pour mesurer la distance entre les vecteurs de caractéristiques. La similarité cosinus est choisie pour évaluer la proximité entre les vecteurs de caractéristiques des images.
-   
-*Rappel*
-
-La formule de la similarité est la suivante :
-
-$$                                                                                                                  
-\text{Similarité} = 1 - \frac{\vec{A} \cdot \vec{B}}{\|\vec{A}\| \times \|\vec{B}\|}                                                                              
-$$                                                                                                                  
-
-où :
-- $\vec{A}$ et $\vec{B}$ sont les vecteurs de caractéristiques.
-- $|\vec{A}\|$ et $|\vec{B}\|$ sont les normes  des vecteurs $\vec{A}$ et $\vec{B}$. 
 5. **Classement et recommndation**: Les images sont classées en fonction de leur similarité avec une image d'entrée donnée. Le système recommande les **N éléments** les plus similaires,
  tout en s'assurant que l'image d'entrée n'est pas incluse parmi les recommandations pour éviter l'auto-recommandation.
 
